@@ -34,7 +34,7 @@ const switchRoutes = (
       }
       return null;
     })}
-    <Redirect from="/client" to="/client/TokenLock" />
+    <Redirect from="/client" to="/client/locks" />
   </Switch>
 );
 

@@ -3,7 +3,7 @@ import LockIcon from "@material-ui/icons/Lock";
 import EcoIcon from "@material-ui/icons/Eco";
 import EmojiNatureIcon from "@material-ui/icons/EmojiNature";
 import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 
 // core components/views for Admin layout
 import DashboardPage from "./views/Dashboard/Dashboard.js";
@@ -16,6 +16,7 @@ import NotificationsPage from "./views/Notifications/Notifications.js";
 import UpgradeToPro from "./views/UpgradeToPro/UpgradeToPro.js";
 
 import TokenLock from "./views/TokenLock/TokenLock.js";
+import Locks from "./views/Locks/Locks.js";
 import Presale from "./views/Presale/Presale.js";
 import LiquidityLock from "./views/LiquidityLock/LiquidityLock.js";
 import Farm from "./views/Farm/Farm.js";
@@ -26,21 +27,29 @@ import RTLPage from "./views/RTLPage/RTLPage.js";
 
 const dashboardRoutes = [
   {
-    path: "/tokenlock",
-    name: "Token Lock",
+    path: "/locks",
+    name: "Locks",
     rtlName: "التطور للاحترافية",
     icon: LockIcon,
-    component: TokenLock,
+    component: Locks,
     layout: "/client",
   },
-  {
-    path: "/liquiditylock",
-    name: "Liquidity Lock",
-    rtlName: "التطور للاحترافية",
-    icon: LockIcon,
-    component: LiquidityLock,
-    layout: "/client",
-  },
+  // {
+  //   path: "/tokenlock",
+  //   name: "Token Lock",
+  //   rtlName: "التطور للاحترافية",
+  //   icon: LockIcon,
+  //   component: TokenLock,
+  //   layout: "/client",
+  // },
+  // {
+  //   path: "/liquiditylock",
+  //   name: "Liquidity Lock",
+  //   rtlName: "التطور للاحترافية",
+  //   icon: LockIcon,
+  //   component: LiquidityLock,
+  //   layout: "/client",
+  // },
   {
     path: "/farm",
     name: "Farm",
